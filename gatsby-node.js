@@ -12,6 +12,7 @@ exports.createPages = ({ graphql, actions }) => {
                 id
                 slug,
                 name,
+                category,
                 price,
                 description,
                 productImage {
