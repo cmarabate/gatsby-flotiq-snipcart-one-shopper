@@ -41,9 +41,6 @@ const ProductDetails = data => (
         </div>
         <div className="row buynowinner">
           <div className="col-sm-2">
-            <span className="category">Price: ${data.data.product.category}</span>
-          </div>
-          <div className="col-sm-2">
             <span className="price">Price: ${data.data.product.price}</span>
           </div>
           <div className="col-sm-10 text-left">
