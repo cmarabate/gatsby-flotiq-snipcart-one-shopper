@@ -32,9 +32,6 @@ class IndexPost extends React.Component {
                   </h2>
                   <div className="row">
                     <div className="col-sm-4 align-self-center">
-                      <span className="category">${items.node.category}</span>
-                    </div>
-                    <div className="col-sm-4 align-self-center">
                       <span className="price">${items.node.price}</span>
                     </div>
                     <div className="col-sm-8 text-right align-self-center">
@@ -82,7 +79,6 @@ export const query = graphql`
           id
           slug,
           name,
-          category,
           price,
           description,
           productImage {
