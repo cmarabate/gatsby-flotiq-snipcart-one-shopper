@@ -18,6 +18,10 @@
             "type": "string",
             "minLength": 1
           },
+          "category": {
+            "type": "string",
+            "minLength": 1
+          },
           "price": {
             "type": "number",
             "minLength": 1
@@ -45,7 +49,8 @@
     "required": [
       "name",
       "slug",
-      "price"
+      "price",
+      "category"
     ],
     "additionalProperties": false
   },
@@ -57,6 +62,10 @@
         "isTitlePart": true
       },
       "slug": {
+        "inputType": "text",
+        "unique": true
+      },
+      "category": {
         "inputType": "text",
         "unique": true
       },
